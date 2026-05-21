@@ -1,0 +1,30 @@
+# Ignore build artifacts and dependencies
+**/node_modules/
+**/build/
+**/dist/
+**/.gradle/
+**/bin/
+**/obj/
+
+# Ignore local environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore project-specific large files/folders
+**/jdk-21.0.2/
+**/jdk-21.zip
+**/gradle-8.7/
+**/gradle-8.7-bin.zip
+**/*.log
+**/boot_out.txt
+**/build_log.txt
+**/build_out.txt
+**/startup.log
+
+# Ignore lock files that cause permission issues during build
+**/*.lock

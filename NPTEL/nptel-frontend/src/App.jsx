@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import './App.css';
 
-const API = 'http://localhost:8080/api';
+const API = 'https://nptel-exam-system-production.up.railway.app/api';
 
 // ─── helpers ──────────────────────────────────────────────────
 function StatusBadge({ value }) {

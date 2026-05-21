@@ -241,7 +241,7 @@ function RegisterPage({ onBack }) {
             const d = await res.json();
             setMsg(d.message);
             setOk(!!d.success);
-        } catch { setMsg('Cannot reach backend. Ensure Spring Boot is running on port 8080.'); }
+        } catch { setMsg('Cannot reach backend. Please try again later.'); }
         finally { setLoading(false); }
     }
 
@@ -372,7 +372,7 @@ function LoginPage({ onLogin }) {
             const d = await res.json();
             if (d.error) { setError(d.error); return; }
             onLogin(d);
-        } catch { setError('Cannot reach backend. Ensure Spring Boot is running on port 8080.'); }
+        } catch { setError('Cannot reach backend. Please try again later.'); }
         finally { setLoading(false); }
     }
 
